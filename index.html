@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title> change the background colour</title>
+  
+  <img src="C:\Users\ravip\Downloads\colours.jpg" alt="colourful image" style ="width: 500px;height: 300px;"display:block; margin:auto;>"
+  <style>
+    body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    #colorButton {
+      background-color: #470826;
+      color: #fff;
+      border: none;
+      padding: 15px 24px;
+      font-size: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #colorButton:hover {
+      background-color: #811d3b;
+    }
+  </style>
+</head>
+<body>
+  
+  <button id="colorButton">click me to Change Background Color</button>
+  
+  
+
+  <script>
+    const btn = document.getElementById("colorButton");
+
+    btn.addEventListener("click", () => {
+      
+      document.body.style.backgroundColor="#811d3b";
+    });
+  </script>
+
+</body>
+</html>
