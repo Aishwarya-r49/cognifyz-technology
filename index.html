@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Giphy Search</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: aqua;
+    }
+    #gif-container img {
+      margin: 0.5rem;
+      max-width: 200px;
+      border-radius: 8px;
+    }
+    #gif-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Giphy!</h1>
+  <input id="searchTerm" type="text" placeholder="Type a keyword…" />
+  <button id="searchBtn">Search GIFs</button>
+  <div id="gif-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
